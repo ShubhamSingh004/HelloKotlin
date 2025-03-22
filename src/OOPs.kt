@@ -1,5 +1,3 @@
-import javax.print.Doc
-
 class Lamb(var brand: String){  // primary constructor
     private var isOn: Boolean
     private var b: String
@@ -34,7 +32,10 @@ class Lamb(var brand: String){  // primary constructor
 
 open class Person{
     private var firstName: String
+
+//    lateinit - initialize the value of last name later in the program
     private lateinit var lastName: String
+
     constructor(fName: String){
         firstName = fName
     }
